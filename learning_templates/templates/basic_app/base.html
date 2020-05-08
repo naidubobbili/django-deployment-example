@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<nav class="navbar navbar-default   navbar-static-top">
+  <div class="container">
+    <ul>
+      <li class='navbar-brand'><a href="{% url 'index'%}">brand</a></li>
+      <li class='navbar-brand'><a href='{% url "admin:index" %}'>admin</a></li>
+      <li class='navbar-brand'><a href='{%url "basic_app:others"%}'>others</a></li>
+
+    </ul>
+
+  </div>
+<div class="container">
+  {%block body_block%}
+  {% endblock %}
+</div>
+</nav>
+
+  </body>
+</html>
